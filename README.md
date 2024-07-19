@@ -16,7 +16,7 @@ Para ejecutar el proyecto, sigue los siguientes pasos:
 2. **Ejecutar el Backend con Docker**
 
     ```bash
-    cd backend
+    cd Backend
     docker-compose up
     ```
 
@@ -38,6 +38,7 @@ Para ejecutar el proyecto, sigue los siguientes pasos:
 
 - Docker
 - Docker Compose
+- Si utilizas linux; agrega a docker-compose:     platform: linux/x86_64
 
 
 ## Notas Adicionales
