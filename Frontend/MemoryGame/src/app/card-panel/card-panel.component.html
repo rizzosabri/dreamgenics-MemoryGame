@@ -1,0 +1,16 @@
+<div class="timer">
+    <span> Tiempo: {{ timer }} segundos</span>
+    <br/>
+    <span> Movimientos: {{ moves }}</span>
+</div>
+
+<div class="card-panel">
+
+    <div *ngFor=" let card of cards; let i = index">
+        <app-card (clickCardEvent)="clickCard($event)" 
+         [image]="card.image"  
+         [imgBackSide]="imgBackSide"></app-card>
+    </div>
+   
+
+</div>

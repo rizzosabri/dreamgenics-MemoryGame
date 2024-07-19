@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 10vh;
+}
+
+.menu-button {
+    background-color: #f8f2f6;
+    color: #a873a1;
+    border: 2px solid #a873a1; 
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 5px;
+}
+
+.menu-button:hover {
+    background-color: #eedce8; 
+    transform: scale(1.05);
+}
+
+.menu-button:active {
+    background-color: #e2c8d7; 
+    transform: scale(0.95);
+}

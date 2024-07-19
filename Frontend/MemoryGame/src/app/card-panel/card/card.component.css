@@ -1,0 +1,154 @@
+body {
+    color: #333;
+    font-family: Arial, Helvetica, serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    background: url(https://josetxu.com/img/fondo_blanco.png) repeat 0 0 #fff;
+}
+
+h1 {
+    background: #333;
+    color: #151414;
+    text-align: center;
+    margin: 0 0 5% 0;
+    padding: 0.5em;
+    margin: 0 0 5% 0;
+}
+
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.card {
+    
+    cursor: default;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 300px;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+    border: 4px solid #90089c;
+}
+
+.card p {
+    margin-bottom: 1.8em;
+}
+
+.card .front,
+.card .back {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: rgb(16, 15, 15);
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 0.8em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.card .front strong {
+    background: #fff;
+    border-radius: 100%;
+    color: #222;
+    font-size: 1.5em;
+    line-height: 30px;
+    padding: 0 7px 4px 6px;
+}
+
+.card .back {
+    transform: rotateY(180deg);
+}
+
+.card .back a {
+    padding: 0.3em 0.5em;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1px;
+    font-size: 0.9em;
+    transition: all 0.2s ease 0s;
+}
+
+.card .back a:hover {
+    background: #fff;
+    color: #333;
+    text-shadow: 0 0 1px #333;
+}
+
+.card {
+    border-radius: 20px;
+    height: 300px;
+    min-height: 300px;
+    background-color: #fff7f7;
+    background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.cardBox {
+    cursor: pointer;
+  } 
+.cardBox.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+  
+.cardBox:nth-child(1) .card .back {
+    background: #fdf7f3;
+    border-radius: 20px;
+    border: 4px solid #90089c
+
+}
+
+.cardBox:nth-child(2) .card .back {
+    background: orange;
+}
+
+.cardBox:nth-child(3) .card .back {
+    background: yellowgreen;
+}
+
+.cardBox:nth-child(4) .card .back {
+    background: tomato;
+}
+
+.cardBox:nth-child(2) .card {
+    -webkit-animation: giro 1.5s 1;
+    animation: giro 1.5s 1;
+}
+
+.cardBox:nth-child(3) .card {
+    -webkit-animation: giro 2s 1;
+    animation: giro 2s 1;
+}
+
+.cardBox:nth-child(4) .card {
+    -webkit-animation: giro 2.5s 1;
+    animation: giro 2.5s 1;
+}
+.cardBox img{
+    width: 100%;
+    border-radius: 20px;
+    margin-top:auto;
+}
+@-webkit-keyframes giro {
+    from {
+        transform: rotateY(180deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes giro {
+    from {
+        transform: rotateY(180deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}

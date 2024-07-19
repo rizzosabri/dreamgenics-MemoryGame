@@ -1,0 +1,51 @@
+body {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(295deg, rgba(255, 255, 255, 1) 6%, rgb(247, 219, 197) 100%);
+    font-family: 'Roboto', sans-serif;
+    color: #330233;
+}
+
+h1 {
+    color: #8a4d7b; 
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid #8a4d7b; 
+    background-color: #f3e6f0; 
+    color: #8a4d7b; 
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none; 
+}
+
+/* Efecto al enfocar el input */
+input[type="text"]:focus {
+    border-color: #6e3a61; 
+    box-shadow: 0 0 10px rgba(110, 58, 97, 0.7); 
+}
+
+/* Placeholder color */
+input[type="text"]::placeholder {
+    color: #6e3a61; 
+    opacity: 0.8; 
+}
+
+/* Estilos para un contenedor opcional del input */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.label {
+    font-size: 1.2em;
+    color: #8a4d7b; 
+    margin-bottom: 10px;
+}

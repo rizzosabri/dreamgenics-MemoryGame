@@ -1,0 +1,18 @@
+
+
+
+
+  <div class="cardBox" (click)="clickCard()"  >
+    <div class="card" [class.flipped]="isFlipped">
+      <div class="front">
+        <img [src]="image" alt="Card Front" />
+      </div>
+      <div class="back">
+        <img src="{{imgBackSide}}"/>
+        
+        <a></a>
+      </div>
+    </div>
+  </div>
+
+

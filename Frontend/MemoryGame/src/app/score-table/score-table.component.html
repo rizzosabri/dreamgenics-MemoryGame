@@ -1,0 +1,29 @@
+<div class="table-container"> 
+<h1>Ranking Jugadores</h1>
+<h4>Ordenado según cantidad de movimientos</h4>
+<table class="table" >
+
+
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Jugador</th>
+        <th scope="col">Equipo</th>
+        <th scope="col">Movimientos</th>
+        <th scope="col">Tiempo (seg)</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+    
+      <tr *ngFor=" let score of scores; let i = index">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>{{ score.name }}</td>
+        <td>{{ score.team }}</td>
+        <td>{{ score.moves }}</td>
+        <td>{{ score.durationSecs }}</td>
+      </tr>
+      </tbody>
+  </table>
+
+</div>

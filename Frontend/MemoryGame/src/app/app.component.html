@@ -1,0 +1,7 @@
+
+<app-home-screen  (startGameEvent)="startGame()"  *ngIf="!isPlaying && !showEndScreen"></app-home-screen>
+<app-card-panel (endGameEvent)="endGame()" #cardPanel *ngIf="isPlaying"></app-card-panel>
+<app-score-table *ngIf="showEndScreen"> </app-score-table>
+<div class="container">
+<button *ngIf="showEndScreen" class="menu-button" type="submit" (click)="playAgain()">Volver a Jugar</button>
+</div>

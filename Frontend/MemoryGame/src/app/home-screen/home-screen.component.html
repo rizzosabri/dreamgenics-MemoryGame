@@ -1,0 +1,23 @@
+
+    <div class="wrapper">
+        <div class="menu-container">
+            <h1>Memory Game</h1>
+            <h2>- Células Sanguíneas -</h2>
+            <div class="menu">
+
+                <form >
+                    <div class="mb-3" >
+                      <label  class="form-label">Nombre: </label>
+                      <input type="text" class="form-control"  name="nombre" placeholder="....">
+                      <label  class="form-label">Equipo: </label>
+                      <input type="text" class="form-control"  name="equipo" placeholder="....">
+                    </div>                              
+                  </form>
+               
+                <button class="menu-button" type="submit" (click)="triggerStartGame()" >Start Game</button>
+            </div>
+        </div>
+    </div>
+   
+<app-score-table></app-score-table>
+
