@@ -20,7 +20,7 @@ RUN npm run build --prod
 FROM nginx:alpine
 
 # Copia los archivos compilados de la etapa de build a la carpeta de nginx
-COPY --from=build /usr/src/app/dist/memory-game /usr/share/nginx/html
+COPY --from=build /usr/src/app/dist/memory-game/browser /usr/share/nginx/html
 
 # Expone el puerto 80
 EXPOSE 80

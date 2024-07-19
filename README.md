@@ -21,7 +21,7 @@ Para ejecutar el proyecto, sigue los siguientes pasos:
     ```
 
     Esto levantará los servicios definidos en el archivo `docker-compose.yml`. Asegúrate de tener Docker y Docker Compose instalados en tu máquina.
-    
+
 3. **Acceder a la Aplicación**
 
     Una vez que los servicios estén en funcionamiento, puedes acceder a la aplicación Angular en tu navegador en la siguiente URL:
@@ -42,7 +42,5 @@ Para ejecutar el proyecto, sigue los siguientes pasos:
 
 ## Notas Adicionales
 
-
-
-Para más detalles, consulta la documentación específica en las carpetas `frontend` y `backend`.
+documentación de la api: Backend/dreamgenics-api/README.md`.
 
